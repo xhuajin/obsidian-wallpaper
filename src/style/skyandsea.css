@@ -1,29 +1,23 @@
-/* html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-.css_lab {
-  position: relative;
+.wallpaper.wallpaper-skyandsea {
+  position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
   top: 0;
   left: 0;
+  pointer-events: none;
 }
-.css_lab * {
+.wallpaper.wallpaper-skyandsea * {
   position: absolute;
   margin: 0;
   padding: 0;
 }
-.css_lab *:before,
-.css_lab *:after {
+.wallpaper.wallpaper-skyandsea *:before,
+.wallpaper.wallpaper-skyandsea *:after {
   content: "";
   display: block;
   position: absolute;
-} */
+}
 
 .sky {
   width: 100%;
@@ -33,6 +27,7 @@ body {
   left: 0;
   overflow: hidden;
 }
+
 .sky:before {
   width: 1000px;
   height: 1000px;
@@ -1051,18 +1046,18 @@ body {
   transform: rotate(-10deg) translate3d(0, 0, 0);
 }
 .bird2 {
-  margin-left: 100px;
+  margin-left: 100px !important;
   bottom: 36%;
-  -webkit-transform: scale(0.9) rotate(-7deg);
+  -webkit-transform: scale(0.9) rotate(-7deg) !important;
   -ms-transform: scale(0.9) rotate(-7deg);
   transform: scale(0.9) rotate(-7deg);
 }
 .bird3 {
-  margin-left: -80px;
-  bottom: 33%;
-  -webkit-transform: scale(0.5) rotate(-12deg);
-  -ms-transform: scale(0.5) rotate(-12deg);
-  transform: scale(0.5) rotate(-12deg);
+  margin-left: -80px !important;
+  bottom: 33% !important;
+  -webkit-transform: scale(0.5) rotate(-12deg) !important;
+  -ms-transform: scale(0.5) rotate(-12deg) !important;
+  transform: scale(0.5) rotate(-12deg) !important;
 }
 .bird1:before,
 .bird2:before,
@@ -1787,8 +1782,8 @@ body {
 .bird2,
 .bird3 {
   opacity: 0.5;
-  -webkit-animation: fly_bird 60s linear 21s infinite;
-  animation: fly_bird 60s linear 21s infinite;
+  -webkit-animation: fly_bird 60s linear 21s infinite !important;
+  animation: fly_bird 60s linear 21s infinite !important;
 }
 @-webkit-keyframes fly_bird {
   0% {

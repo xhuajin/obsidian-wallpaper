@@ -1,6 +1,6 @@
 /* star wallpaper */
 /* 上边框，左边框，关闭区域 */
-.theme-dark .app-container .wallpaper.wallpaper-stars div[data-type='thino_view'] .view-content:has(>.modern) {
+/* .theme-dark .app-container .wallpaper.wallpaper-stars div[data-type='thino_view'] .view-content:has(>.modern) {
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow: hidden;
 }
@@ -25,7 +25,7 @@ body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless.theme-dark .app-c
 .theme-dark .app-container .wallpaper.wallpaper-stars .workspace-split.mod-root .workspace-tab-header.is-active::before,
 .theme-dark .app-container .wallpaper.wallpaper-stars .workspace-split.mod-root .workspace-tab-header.is-active::after {
   box-shadow: unset;
-}
+} */
 
 @keyframes animStar {
   from {
