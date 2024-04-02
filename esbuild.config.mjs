@@ -1,6 +1,7 @@
-import esbuild from "esbuild";
-import process from "process";
 import builtins from "builtin-modules";
+import esbuild from "esbuild";
+import glob from "glob";
+import process from "process";
 
 const banner =
 `/*
@@ -10,39 +11,63 @@ if you want to view the source, please visit the github repository of this plugi
 `;
 
 const prod = (process.argv[2] === "production");
+// const cssFiles = glob.sync('src/style/*.css');
 
 const context = await esbuild.context({
-	banner: {
-		js: banner,
-	},
-	entryPoints: ["main.ts"],
-	bundle: true,
-	external: [
-		"obsidian",
-		"electron",
-		"@codemirror/autocomplete",
-		"@codemirror/collab",
-		"@codemirror/commands",
-		"@codemirror/language",
-		"@codemirror/lint",
-		"@codemirror/search",
-		"@codemirror/state",
-		"@codemirror/view",
-		"@lezer/common",
-		"@lezer/highlight",
-		"@lezer/lr",
-		...builtins],
-	format: "cjs",
-	target: "es2018",
-	logLevel: "info",
-	sourcemap: prod ? false : "inline",
-	treeShaking: true,
-	outfile: "main.js",
+  banner: {
+    js: banner,
+  },
+  entryPoints: ["src/main.ts"],
+  bundle: true,
+  external: [
+    "obsidian",
+    "electron",
+    "@codemirror/autocomplete",
+    "@codemirror/collab",
+    "@codemirror/commands",
+    "@codemirror/language",
+    "@codemirror/lint",
+    "@codemirror/search",
+    "@codemirror/state",
+    "@codemirror/view",
+    "@lezer/common",
+    "@lezer/highlight",
+    "@lezer/lr",
+    ...builtins],
+  format: "cjs",
+  target: "es2018",
+  logLevel: "info",
+  sourcemap: prod ? false : "inline",
+  treeShaking: true,
+  outfile: "../WallpaperTestVault/.obsidian/plugins/wallpaper/main.js",
+  // outdir: "../WallpaperTestVault/.obsidian/plugins/wallpaper",
+  outbase: "src",
 });
+
+const buildCSS = await esbuild.context({
+  entryPoints: ["src/style/styles.css"],
+  outfile: "../WallpaperTestVault/.obsidian/plugins/wallpaper/styles.css",
+  bundle: true,
+  loader: { '.css': 'css' },
+});
+
+
+// const buildManifest = await esbuild.context({
+//   entryPoints: ["./manifest.json"],
+//   bundle: true,
+//   outfile: "../WallpaperTestVault/.obsidian/plugins/wallpaper/manifest.json",
+// });
+
+
+// Promise.all([buildCSS(), buildManifest()]).catch(() => process.exit(1));
 
 if (prod) {
 	await context.rebuild();
+  await buildCSS.rebuild();
+  // await buildManifest.rebuild();
 	process.exit(0);
 } else {
 	await context.watch();
+  await buildCSS.watch();
+  // await buildManifest.watch();
 }
