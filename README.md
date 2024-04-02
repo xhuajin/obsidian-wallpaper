@@ -1,96 +1,81 @@
-# Obsidian Sample Plugin
+# Obsidian Wallpaper
 
-This is a sample plugin for Obsidian (https://obsidian.md).
+I like to see all kinds of beautiful front-end works made by great coder on [codepen.io](https://codepen.io/), and I really want to see these effects in my vault, so I tried to write this plugin. 
 
-This project uses Typescript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in Typescript Definition format, which contains TSDoc comments describing what it does.
+This plugin can add some pretty live wallpapers to your vault. By modifying the source code downloaded from [codepen.io](https://codepen.io/), I have successfully implemented five projects in the library so far.
 
-**Note:** The Obsidian API is still in early alpha and is subject to change at any time!
+- Sky and Sea: [CodePen Home
+CSS Illustration 'Sky and Sea'](https://codepen.io/WhitePallet/details/YYmZEK)
+- Stars1: [Parallax Star background in CSS](https://codepen.io/sarazond/pen/LYGbwj)
+- Stars2: [CodePen Home
+Stars #Codevember_08](https://codepen.io/johnbgarcia/pen/qqdgGp)
+- Stars3: [A sky full of stars](https://codepen.io/jlnljn/pen/gRrOxM)
+- Campfire: [Campfire Colony](https://codepen.io/jackiezen/pen/gOOgvOO?editors=1000)
 
-This sample plugin demonstrates some of the basic functionality the plugin API can do.
-- Adds a ribbon icon, which shows a Notice when clicked.
-- Adds a command "Open Sample Modal" which opens a Modal.
-- Adds a plugin setting tab to the settings page.
-- Registers a global click event and output 'click' to the console.
-- Registers a global interval which logs 'setInterval' to the console.
+ps. please ignore the names I gave them, as they are to be put in the Settings, I don't think of too long names.
 
-## First time developing plugins?
+## Screenshot and Video
 
-Quick starting guide for new plugin devs:
+The screenshots and videos shown below are from the theme: Things, hence the dark blue background. The effect may vary depending on the subject
 
-- Check if [someone already developed a plugin for what you want](https://obsidian.md/plugins)! There might be an existing plugin similar enough that you can partner up with.
-- Make a copy of this repo as a template with the "Use this template" button (login to GitHub if you don't see it).
-- Clone your repo to a local development folder. For convenience, you can place this folder in your `.obsidian/plugins/your-plugin-name` folder.
-- Install NodeJS, then run `npm i` in the command line under your repo folder.
-- Run `npm run dev` to compile your plugin from `main.ts` to `main.js`.
-- Make changes to `main.ts` (or create new `.ts` files). Those changes should be automatically compiled into `main.js`.
-- Reload Obsidian to load the new version of your plugin.
-- Enable plugin in settings window.
-- For updates to the Obsidian API run `npm update` in the command line under your repo folder.
+### Sky And Sea
 
-## Releasing new releases
+![skyandsea](assets/skyandsea.png)
 
-- Update your `manifest.json` with your new version number, such as `1.0.1`, and the minimum Obsidian version required for your latest release.
-- Update your `versions.json` file with `"new-plugin-version": "minimum-obsidian-version"` so older versions of Obsidian can download an older version of your plugin that's compatible.
-- Create new GitHub release using your new version number as the "Tag version". Use the exact version number, don't include a prefix `v`. See here for an example: https://github.com/obsidianmd/obsidian-sample-plugin/releases
-- Upload the files `manifest.json`, `main.js`, `styles.css` as binary attachments. Note: The manifest.json file must be in two places, first the root path of your repository and also in the release.
-- Publish the release.
+<video width="320" height="240" controls>
+  <source src="assets/skyandsea.mp4" type="video/mp4">
+  Your browser dosen't support playing this video.
+</video>
 
-> You can simplify the version bump process by running `npm version patch`, `npm version minor` or `npm version major` after updating `minAppVersion` manually in `manifest.json`.
-> The command will bump version in `manifest.json` and `package.json`, and add the entry for the new version to `versions.json`
+### Stars1
 
-## Adding your plugin to the community plugin list
+![stars1](assets/stars1.png)
 
-- Check https://github.com/obsidianmd/obsidian-releases/blob/master/plugin-review.md
-- Publish an initial version.
-- Make sure you have a `README.md` file in the root of your repo.
-- Make a pull request at https://github.com/obsidianmd/obsidian-releases to add your plugin.
+<video width="320" height="240" controls>
+  <source src="assets/stars1.mp4" type="video/mp4">
+  Your browser dosen't support playing this video.
+</video>
 
-## How to use
+### Stars2
 
-- Clone this repo.
-- Make sure your NodeJS is at least v16 (`node --version`).
-- `npm i` or `yarn` to install dependencies.
-- `npm run dev` to start compilation in watch mode.
+![stars2](assets/stars2.png)
 
-## Manually installing the plugin
+<video width="320" height="240" controls>
+  <source src="assets/stars2.mp4" type="video/mp4">
+  Your browser dosen't support playing this video.
+</video>
 
-- Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
+### Stars3
 
-## Improve code quality with eslint (optional)
-- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. 
-- To use eslint with this project, make sure to install eslint from terminal:
-  - `npm install -g eslint`
-- To use eslint to analyze this project use this command:
-  - `eslint main.ts`
-  - eslint will then create a report with suggestions for code improvement by file and line number.
-- If your source code is in a folder, such as `src`, you can use eslint with this command to analyze all files in that folder:
-  - `eslint .\src\`
+![stars3](assets/stars3.png)
 
-## Funding URL
+<video width="320" height="240" controls>
+  <source src="assets/stars3.mp4" type="video/mp4">
+  Your browser dosen't support playing this video.
+</video>
 
-You can include funding URLs where people who use your plugin can financially support it.
+### Campfire
 
-The simple way is to set the `fundingUrl` field to your link in your `manifest.json` file:
+![campfire](assets/campfire.png)
 
-```json
-{
-    "fundingUrl": "https://buymeacoffee.com"
-}
-```
+<video width="320" height="240" controls>
+  <source src="assets/campfire.mp4" type="video/mp4">
+  Your browser dosen't support playing this video.
+</video>
 
-If you have multiple URLs, you can also do:
+## Setting
 
-```json
-{
-    "fundingUrl": {
-        "Buy Me a Coffee": "https://buymeacoffee.com",
-        "GitHub Sponsor": "https://github.com/sponsors",
-        "Patreon": "https://www.patreon.com/"
-    }
-}
-```
+There is currently only one setting for switching wallpapers.
 
-## API Documentation
+![](assets/setting.png)
 
-See https://github.com/obsidianmd/obsidian-api
+## Others
+
+If this plugin makes you like your library more, please give it a star. If you have any other projects you want to join, raise an issue. 
+
+Or if you have strong DIY skills.
+- Fork this repository.
+- npm i, npm run dev
+- Add the project's css to 'src/style/*'.
+- Add a function to paint the wallpaper in 'src/wallpaper/*'. Add a switch case in 'src/wallpaper/wallpaperPainter.ts'
+- Add an option to toggle to new wallpaper in 'settings.js'.

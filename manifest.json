@@ -1,11 +1,11 @@
 {
 	"id": "wallpaper",
 	"name": "wallpaper",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
-	"description": "一些好看的墙纸",
+	"description": "Add some pretty wallpapers to your vault",
 	"author": "Huajin",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"authorUrl": "https://github.com/xhuajin",
+	"fundingUrl": "",
 	"isDesktopOnly": false
 }
