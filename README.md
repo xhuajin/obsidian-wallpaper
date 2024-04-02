@@ -16,52 +16,38 @@ ps. please ignore the names I gave them, as they are to be put in the Settings, 
 
 ## Screenshot and Video
 
-The screenshots and videos shown below are from the theme: Things, hence the dark blue background. The effect may vary depending on the subject
+The screenshots and videos shown below are from the theme: Things, hence the dark blue background. The effect may vary depending on the subject. Gif  quality is badly distorted, you can find the corresponding mp4 in "assets".
 
 ### Sky And Sea
 
 ![skyandsea](assets/skyandsea.png)
 
-<video width="320" height="240" controls>
-  <source src="assets/skyandsea.mp4" type="video/mp4">
-  Your browser dosen't support playing this video.
-</video>
+![skyandsea](assets/skyandsea.gif)
+
 
 ### Stars1
 
 ![stars1](assets/stars1.png)
 
-<video width="320" height="240" controls>
-  <source src="assets/stars1.mp4" type="video/mp4">
-  Your browser dosen't support playing this video.
-</video>
+![stars1](assets/stars1.gif)
 
 ### Stars2
 
 ![stars2](assets/stars2.png)
 
-<video width="320" height="240" controls>
-  <source src="assets/stars2.mp4" type="video/mp4">
-  Your browser dosen't support playing this video.
-</video>
+![stars2](assets/stars2.gif)
 
 ### Stars3
 
 ![stars3](assets/stars3.png)
 
-<video width="320" height="240" controls>
-  <source src="assets/stars3.mp4" type="video/mp4">
-  Your browser dosen't support playing this video.
-</video>
+![stars3](assets/stars3.gif)
 
 ### Campfire
 
 ![campfire](assets/campfire.png)
 
-<video width="320" height="240" controls>
-  <source src="assets/campfire.mp4" type="video/mp4">
-  Your browser dosen't support playing this video.
-</video>
+![campfire](assets/campfire.gif)
 
 ## Setting
 
