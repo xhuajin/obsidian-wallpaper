@@ -1,10 +1,10 @@
 {
 	"id": "wallpaper",
-	"name": "Wackground",
-	"version": "1.0.0",
+	"name": "wallpaper",
+	"version": "1.0.1",
 	"minAppVersion": "0.15.0",
 	"description": "一些好看的墙纸",
-	"author": "Obsidian",
+	"author": "Huajin",
 	"authorUrl": "https://obsidian.md",
 	"fundingUrl": "https://obsidian.md/pricing",
 	"isDesktopOnly": false

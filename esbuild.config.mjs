@@ -1,6 +1,6 @@
 import builtins from "builtin-modules";
 import esbuild from "esbuild";
-import glob from "glob";
+// import glob from "glob";
 import process from "process";
 
 const banner =

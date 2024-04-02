@@ -27,15 +27,18 @@ export class WallpaperSettingTab extends PluginSettingTab {
   display(): void {
     const { containerEl } = this;
     containerEl.empty();
-    containerEl.createEl('h1', { text: 'Wallpaper Store' });
+    containerEl.createEl('h1', { text: 'Wallpaper Board' });
 
     new Setting(containerEl)
       .setName('Wallpaper')
       .setDesc('Choose a wallpaper')
       .addDropdown(dropdown => {
         dropdown.addOption("none", "None");
-        dropdown.addOption("stars", "Stars");
+        dropdown.addOption("stars1", "Stars1");
+        dropdown.addOption("stars2", "Stars2");
+        dropdown.addOption("stars3", "Stars3");
         dropdown.addOption("skyandsea", "Sky and Sea");
+        dropdown.addOption("campfire", "Campfire");
         dropdown.setValue(this.plugin.settings.wallpaperId);
         dropdown.onChange(async (value) => {
           if (value == this.plugin.settings.wallpaperId) return;

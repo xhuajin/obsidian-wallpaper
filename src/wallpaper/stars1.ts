@@ -1,6 +1,6 @@
 import Wallpaper from '../main';
 
-export function paintStars(plugin: Wallpaper) {
+export function paintStars1(plugin: Wallpaper) {
   plugin.resetWallpaper();
   let wallpaper = plugin.containerEl.querySelector('.wallpaper');
   if (!wallpaper) {
@@ -9,9 +9,7 @@ export function paintStars(plugin: Wallpaper) {
   }
   // 给 wallpaper 添加一个类
   if (!wallpaper) return;
-  wallpaper.classList.add("wallpaper-stars");
-  // wallpaper.createDiv("stars");
-  console.log("paintStars called");
+  wallpaper.classList.add("wallpaper-stars1");
 
   // Set theme to dark mode
   if (plugin.app.vault.getConfig("theme") === "moonstone") {

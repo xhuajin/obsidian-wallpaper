@@ -1,0 +1,24 @@
+.wallpaper.wallpaper-stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+.wallpaper.wallpaper-stars3 .sky {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: transparent;
+}
+
+.wallpaper.wallpaper-stars3 .sky span {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  border-radius: 100%;
+  transition: 100s linear;
+}
