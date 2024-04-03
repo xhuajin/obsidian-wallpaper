@@ -3,3 +3,19 @@
 @import url(stars3.css);
 @import url(campfire.css);
 @import url(skyandsea.css);
+
+.app-container:has(.wallpaper) .workspace,
+.app-container:has(.wallpaper) .workspace .workspace-ribbon,
+.app-container:has(.wallpaper) .workspace .workspace-split,
+.app-container:has(.wallpaper) .workspace .workspace-split .workspace-leaf,
+.app-container:has(.wallpaper) .workspace .workspace-split .workspace-leaf .view-content {
+  background: transparent;
+}
+
+.app-container:has(.wallpaper) .workspace .workspace-ribbon {
+  border-right: 0;
+}
+
+.wallpaper {
+  z-index: -1;
+}
