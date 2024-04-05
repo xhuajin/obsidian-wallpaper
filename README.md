@@ -16,50 +16,48 @@ ps. please ignore the names I gave them, as they are to be put in the Settings, 
 
 ## Screenshot and Video
 
-The screenshots and videos shown below are from the theme: Things, hence the dark blue background. The effect may vary depending on the subject. Gif  quality is badly distorted, you can find the corresponding mp4 in "assets".
-
 ### Sky And Sea
 
 ![skyandsea](assets/skyandsea.png)
 
-![skyandsea](assets/skyandsea.gif)
-
+![skyandsea](https://github.com/xhuajin/obsidian-wallpaper/assets/114134574/29a87435-0e21-42ca-b4d4-43911fa04b18)
 
 ### Stars1
 
 ![stars1](assets/stars1.png)
 
-![stars1](assets/stars1.gif)
+![stars1](https://github.com/xhuajin/obsidian-wallpaper/assets/114134574/173a7578-d43d-4937-bb83-a2b76dbbc11a)
 
 ### Stars2
 
 ![stars2](assets/stars2.png)
 
-![stars2](assets/stars2.gif)
+![stars2](https://github.com/xhuajin/obsidian-wallpaper/assets/114134574/3d0de151-e7b2-4b75-a5c5-336e71078bce)
 
 ### Stars3
 
 ![stars3](assets/stars3.png)
 
-![stars3](assets/stars3.gif)
+![stars3](https://github.com/xhuajin/obsidian-wallpaper/assets/114134574/072aa5b7-2335-48b3-b6ae-9a564590e2ff)
 
 ### Campfire
 
 ![campfire](assets/campfire.png)
 
-![campfire](assets/campfire.gif)
+![campfire](https://github.com/xhuajin/obsidian-wallpaper/assets/114134574/d0db5be0-66ac-4565-9782-e9cd0f8a9dd9)
 
 ## Setting
 
 There is currently only one setting for switching wallpapers.
 
-![](assets/setting.png)
+![setting-tab](assets/setting.png)
 
 ## Others
 
-If this plugin makes you like your library more, please give it a star. If you have any other projects you want to join, raise an issue. 
+If this plugin makes you like your library more, please give me a ⭐star for encouragement.😗. 
 
-Or if you have strong DIY skills.
+If you want to add another wallpaper, you can raise an issue. Or if you have strong DIY skills, you can
+
 - Fork this repository.
 - npm i, npm run dev
 - Add the project's css to 'src/style/*'.
