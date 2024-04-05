@@ -4,8 +4,7 @@ I like to see all kinds of beautiful front-end works made by great coder on [cod
 
 This plugin can add some pretty live wallpapers to your vault. By modifying the source code downloaded from [codepen.io](https://codepen.io/), I have successfully implemented five projects in the library so far.
 
-- Sky and Sea: [CodePen Home
-CSS Illustration 'Sky and Sea'](https://codepen.io/WhitePallet/details/YYmZEK)
+- Sky and Sea: [CodePen HomeCSS Illustration 'Sky and Sea'](https://codepen.io/WhitePallet/details/YYmZEK)
 - Stars1: [Parallax Star background in CSS](https://codepen.io/sarazond/pen/LYGbwj)
 - Stars2: [CodePen Home
 Stars #Codevember_08](https://codepen.io/johnbgarcia/pen/qqdgGp)
